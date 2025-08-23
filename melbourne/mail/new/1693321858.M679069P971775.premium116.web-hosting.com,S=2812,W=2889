@@ -1,0 +1,77 @@
+Return-Path: <>
+Delivered-To: rtpwtcrd@premium116.web-hosting.com
+Received: from premium116.web-hosting.com
+	by premium116.web-hosting.com with LMTP
+	id OP9aJ4IK7mT/0w4AUicvaQ
+	(envelope-from <>)
+	for <rtpwtcrd@premium116.web-hosting.com>; Tue, 29 Aug 2023 11:10:58 -0400
+Return-path: <>
+Envelope-to: rtpwtcrd@premium116.web-hosting.com
+Delivery-date: Tue, 29 Aug 2023 11:10:58 -0400
+Received: from mailnull by premium116.web-hosting.com with local (Exim 4.96)
+	id 1qb0Ms-0044zH-24
+	for rtpwtcrd@premium116.web-hosting.com;
+	Tue, 29 Aug 2023 11:10:58 -0400
+X-Failed-Recipients: admin@wikagrup.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@premium116.web-hosting.com>
+To: rtpwtcrd@premium116.web-hosting.com
+References: <zqkSR3xTZQO4LbJeNaisc7eettZwV71BXVZRsZ9nYk@wikagrup.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1693321858-eximdsn-1854335264
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1qb0Ms-0044zH-24@premium116.web-hosting.com>
+Date: Tue, 29 Aug 2023 11:10:58 -0400
+
+--1693321858-eximdsn-1854335264
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  admin@wikagrup.com
+    No Such User Here
+
+--1693321858-eximdsn-1854335264
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; premium116.web-hosting.com
+
+Action: failed
+Final-Recipient: rfc822;admin@wikagrup.com
+Status: 5.0.0
+
+--1693321858-eximdsn-1854335264
+Content-type: message/rfc822
+
+Return-path: <rtpwtcrd@premium116.web-hosting.com>
+Received: from rtpwtcrd by premium116.web-hosting.com with local (Exim 4.96)
+	(envelope-from <rtpwtcrd@premium116.web-hosting.com>)
+	id 1qb0Ms-0044z1-1S
+	for admin@wikagrup.com;
+	Tue, 29 Aug 2023 11:10:58 -0400
+To: admin@wikagrup.com
+Subject: =?us-ascii?Q?[WIKAGRUP]_Your_site_has_updated_to_WordPress_6?=
+ =?us-ascii?Q?.3.1?=
+Date: Tue, 29 Aug 2023 15:10:58 +0000
+From: WordPress <wordpress@wikagrup.com>
+Message-ID: <zqkSR3xTZQO4LbJeNaisc7eettZwV71BXVZRsZ9nYk@wikagrup.com>
+X-Mailer: PHPMailer 6.8.0 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <rtpwtcrd@premium116.web-hosting.com>
+
+Howdy! Your site at https://wikagrup.com has been updated automatically to WordPress 6.3.1.
+
+No further action is needed on your part. For more on version 6.3.1, see the About WordPress screen:
+https://wikagrup.com/wp-admin/about.php
+
+If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.
+https://wordpress.org/support/forums/
+
+The WordPress Team
+
+
+--1693321858-eximdsn-1854335264--

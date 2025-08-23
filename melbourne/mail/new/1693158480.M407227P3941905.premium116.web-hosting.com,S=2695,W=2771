@@ -1,0 +1,76 @@
+Return-Path: <>
+Delivered-To: rtpwtcrd@premium116.web-hosting.com
+Received: from premium116.web-hosting.com
+	by premium116.web-hosting.com with LMTP
+	id cBlSFVCM62QRJjwAUicvaQ
+	(envelope-from <>)
+	for <rtpwtcrd@premium116.web-hosting.com>; Sun, 27 Aug 2023 13:48:00 -0400
+Return-path: <>
+Envelope-to: rtpwtcrd@premium116.web-hosting.com
+Delivery-date: Sun, 27 Aug 2023 13:48:00 -0400
+Received: from mailnull by premium116.web-hosting.com with local (Exim 4.96)
+	id 1qaJrk-00GXb2-15
+	for rtpwtcrd@premium116.web-hosting.com;
+	Sun, 27 Aug 2023 13:48:00 -0400
+X-Failed-Recipients: admin@wikagrup.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@premium116.web-hosting.com>
+To: rtpwtcrd@premium116.web-hosting.com
+References: <KY1PYoxhnw4ErKfHBTFOQ2tCinva4d9NUiliuJKV8@wikagrup.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1693158480-eximdsn-966691448
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1qaJrk-00GXb2-15@premium116.web-hosting.com>
+Date: Sun, 27 Aug 2023 13:48:00 -0400
+
+--1693158480-eximdsn-966691448
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  admin@wikagrup.com
+    No Such User Here
+
+--1693158480-eximdsn-966691448
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; premium116.web-hosting.com
+
+Action: failed
+Final-Recipient: rfc822;admin@wikagrup.com
+Status: 5.0.0
+
+--1693158480-eximdsn-966691448
+Content-type: message/rfc822
+
+Return-path: <rtpwtcrd@premium116.web-hosting.com>
+Received: from rtpwtcrd by premium116.web-hosting.com with local (Exim 4.96)
+	(envelope-from <rtpwtcrd@premium116.web-hosting.com>)
+	id 1qaJrk-00GXao-0U
+	for admin@wikagrup.com;
+	Sun, 27 Aug 2023 13:48:00 -0400
+To: admin@wikagrup.com
+Subject: New Form Entry #1 for Tor
+Date: Sun, 27 Aug 2023 17:48:00 +0000
+From: WIKAGRUP <noreply@wikagrup.com>
+Message-ID: <KY1PYoxhnw4ErKfHBTFOQ2tCinva4d9NUiliuJKV8@wikagrup.com>
+X-Mailer: PHPMailer 6.8.0 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Sender:  <rtpwtcrd@premium116.web-hosting.com>
+
+<p>You have a new website form submission: </p>
+<ol>
+<li><b>User ID</b><br />a</li>
+<li><b>Masukkan nomor WA AKTIF</b><br />064684684684</li>
+<li><b>Tanggal</b><br />27/08/2023</li>
+<li><b>Kendala</b><br />aa</li>
+<li><b>Lampirkan Foto (Optional)</b></li>
+</ol>
+<p>---<br /> This message was sent from <a href="https://wikagrup.com">https://wikagrup.com</a>.</p>
+
+
+--1693158480-eximdsn-966691448--

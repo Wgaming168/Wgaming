@@ -1,0 +1,83 @@
+Return-Path: <>
+Delivered-To: rtpwtcrd@premium116.web-hosting.com
+Received: from premium116.web-hosting.com
+	by premium116.web-hosting.com with LMTP
+	id +BYVBPWJKGUSSxkAUicvaQ
+	(envelope-from <>)
+	for <rtpwtcrd@premium116.web-hosting.com>; Thu, 12 Oct 2023 20:06:13 -0400
+Return-path: <>
+Envelope-to: rtpwtcrd@premium116.web-hosting.com
+Delivery-date: Thu, 12 Oct 2023 20:06:13 -0400
+Received: from mailnull by premium116.web-hosting.com with local (Exim 4.96.1)
+	id 1qr5gz-007O7K-0A
+	for rtpwtcrd@premium116.web-hosting.com;
+	Thu, 12 Oct 2023 20:06:13 -0400
+X-Failed-Recipients: admin@shiomacau.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@premium116.web-hosting.com>
+To: rtpwtcrd@premium116.web-hosting.com
+References: <lfYSgCdyTam1flEZ5wDWB7y7nfDzwj4w5NBf6iN1w@apkwika.com>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1697155573-eximdsn-1745973644
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1qr5gz-007O7K-0A@premium116.web-hosting.com>
+Date: Thu, 12 Oct 2023 20:06:13 -0400
+
+--1697155573-eximdsn-1745973644
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  admin@shiomacau.com
+    host mx1-hosting.jellyfish.systems [198.54.127.242]
+    SMTP error from remote mail server after RCPT TO:<admin@shiomacau.com>:
+    554 5.1.1 <admin@shiomacau.com>: Recipient address rejected:
+    undeliverable address: host business61.web-hosting.com[63.250.38.191] said:
+    550 No Such User Here (in reply to RCPT TO command)
+
+--1697155573-eximdsn-1745973644
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; premium116.web-hosting.com
+
+Action: failed
+Final-Recipient: rfc822;admin@shiomacau.com
+Status: 5.0.0
+Remote-MTA: dns; mx1-hosting.jellyfish.systems
+Diagnostic-Code: smtp; 554 5.1.1 <admin@shiomacau.com>: Recipient address rejected: undeliverable address: host business61.web-hosting.com[63.250.38.191] said: 550 No Such User Here (in reply to RCPT TO command)
+
+--1697155573-eximdsn-1745973644
+Content-type: message/rfc822
+
+Return-path: <rtpwtcrd@premium116.web-hosting.com>
+Received: from rtpwtcrd by premium116.web-hosting.com with local (Exim 4.96.1)
+	(envelope-from <rtpwtcrd@premium116.web-hosting.com>)
+	id 1qr5gy-007O5h-07
+	for admin@shiomacau.com;
+	Thu, 12 Oct 2023 20:06:12 -0400
+To: admin@shiomacau.com
+Subject: =?us-ascii?Q?[Aplikasi_WIKATOGEL]_Your_site_has_updated_to_W?=
+ =?us-ascii?Q?ordPress_6.3.2?=
+Date: Fri, 13 Oct 2023 00:06:11 +0000
+From: WordPress <wordpress@apkwika.com>
+Message-ID: <lfYSgCdyTam1flEZ5wDWB7y7nfDzwj4w5NBf6iN1w@apkwika.com>
+X-Mailer: PHPMailer 6.8.0 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <rtpwtcrd@premium116.web-hosting.com>
+
+Howdy! Your site at https://apkwika.com has been updated automatically to WordPress 6.3.2.
+
+No further action is needed on your part. For more on version 6.3.2, see the About WordPress screen:
+https://apkwika.com/wp-admin/about.php
+
+If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.
+https://wordpress.org/support/forums/
+
+The WordPress Team
+
+
+--1697155573-eximdsn-1745973644--
