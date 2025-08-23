@@ -1,1 +1,432 @@
 
+
+<!DOCTYPE html>
+<html lang="en-US">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<title>Monaco Pools &#8211; Official Lottery Website</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='index.html' />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="Official Lottery Website">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+<link rel="stylesheet" href="/css/lottery.css">
+
+<style>
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+#countdown {
+    animation: blink 1s infinite;
+}
+</style>
+</head>
+
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-9 wp-custom-logo">
+
+<header>
+    <div class="container px-3 py-4">
+        <div class="row no-gutters justify-content-between align-items-center">
+            <div class="col-12 col-lg-auto">
+                <div class="logo-wrapper bg-color-9 px-3 py-4">
+                    <a href="index.html"><img class="web-logo" src="Monacopools.png"></a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-auto">
+                <div class="text-white text-center">
+                    <span>Welcome to the official site of Monaco Pools. Where excitement and anticipation converge with every live draw!</span>
+                    <p style="margin-top: 10px;">Step into the excitement on our online lottery site! Watch as fortunes unfold in real-time, offering you the chance to win big everyday.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div style="margin-bottom: 10px;">
+        <div class="row no-gutters justify-content-end justify-content-lg-between align-items-center">
+            <div class="col-12 col-lg-auto">
+                <h6 class="text-white text-center mb-0">
+                    <span style="font-size: 15px;">LIVE DRAW STARTING IN : </span>
+                    <span class="d-block d-md-none"></span>
+                     <span id="countdown" style="font-size: 30px; color: #7d0000;font-weight: bolder; background: linear-gradient(to bottom, #ffe000 0%, #fd8c15 100%); padding: 1px 5px;margin-top: 20px"></span>
+                </h6>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+function calculateTimeLeft() {
+    const now = new Date();
+    const target = new Date();
+    target.setHours(19, 0, 0, 0); // Set target time to 7 PM
+
+    // Adjust for GMT+7
+    const timezoneOffset = -7 * 60; // Offset in minutes for GMT+7
+    const currentTimezoneOffset = now.getTimezoneOffset();
+    const offsetDifference = currentTimezoneOffset - timezoneOffset;
+    target.setMinutes(target.getMinutes() + offsetDifference);
+
+    if (now > target) {
+        target.setDate(target.getDate() + 1); // If target time has passed today, set it for tomorrow
+    }
+
+    const timeLeft = target - now;
+
+    return {
+        hours: Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((timeLeft % (1000 * 60)) / 1000)
+    };
+}
+
+function updateCountdown() {
+    const timeLeft = calculateTimeLeft();
+
+    document.getElementById('countdown').textContent =
+        `${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`;
+}
+
+setInterval(updateCountdown, 1000);
+</script>
+<!-- content page home below -->
+<section>
+    <div class="container px-3 py-0">
+        <div class="card card-content bg-gradient-1 border-0 px-0 py-0">
+            <div class="card-body border-0 px-3 pt-0 pb-3 px-lg-4 pb-lg-4">
+                
+<div class="row no-gutters justify-content-between">
+    <div class="col-12 col-lg-auto">
+        <h3 class="d-none d-lg-block text-date text-white text-center text-lg-left mt-3 mb-2" style="font-size: 35px;">
+            <span>Recent Results</span>
+        </h3>
+        <h5 class="d-block d-lg-none text-date text-white text-center text-lg-left mt-3 mb-3" style="font-size: 25px;">
+            <span>Recent Results</span>
+        </h5>
+    </div>
+</div>
+<div class="row no-gutters justify-content-between">  
+    <!----HISTORY NYA 1 BULAN AJA---->
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 23, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>2</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>0</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 22, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>4</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>6</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>2</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 21, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>9</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>3</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 20, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>0</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>7</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 19, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>3</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>4</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>9</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 18, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>7</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>7</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>2</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>1</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 17, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>9</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>4</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 16, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>4</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>7</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>3</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>9</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 15, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>9</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>2</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>0</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 14, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>6</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>1</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>2</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 13, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>2</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>3</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>7</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 12, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>1</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>4</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>7</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 11, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>3</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>9</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>7</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 10, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>3</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>2</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>6</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 09, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>1</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>3</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>0</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 08, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>3</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>9</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>6</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>4</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 07, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>1</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>7</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 06, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>7</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>6</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>1</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 05, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>0</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>1</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 04, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>7</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>3</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>4</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>1</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 03, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>7</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>3</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 02, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>9</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>2</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>6</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>8</span></div></div>
+            </div>
+        </div>
+        </div>
+    <div class="col-12 col-lg-auto">
+            <div class="number-title text-white text-center">
+            <h6 class="text-uppercase my-2 mt-lg-3" style="font-size: 14px;">Aug 01, 2025</h6></div>
+            <div class="number-box text-center mb-3 mb-lg-0">
+            <div id="lastdraw-lottery-main-1" class="text-center prize-wrapper">
+                <div class="prize-block winner"><div class="prize-digit"><span>9</span></div></div> 
+                <div class="prize-block winner"><div class="prize-digit"><span>0</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>3</span></div></div>
+                <div class="prize-block winner"><div class="prize-digit"><span>5</span></div></div>
+            </div>
+        </div>
+        </div>
+    
+    
+    
+    
+    
+
+
+    
+    
+        
+</div></div></div></div></section>
+
+<div style="text-align: center; color: #fff; margin: 20px 5px 15px 20px; font-size: 15px;">
+    <p>Experience the thrill of watching the numbers unfold in real-time, as each draw unfolds with suspense and anticipation. Whether you're a seasoned player or new to the world of lottery games, our platform is designed to provide a seamless and enjoyable experience for all.</p>
+    <p>Join us as we create moments of excitement, joy, and perhaps even life-changing wins. Get ready to immerse yourself in the excitement of live draws and the thrill of lottery gaming like never before!</p>
+</div>
+
+<footer class="shadow bg-color-9">
+    <div class="container px-3 py-4 py-lg-5">
+        <div class="logo-wrapper mb-4">
+            <a href="index.html"><img class="web-logo" src="Monacopools.png"></a>
+        </div>
+        <div class="info-box mb-3">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-auto">
+                    <h3 class="text-white text-uppercase font-weight-bold ls-2 mb-2">9.506.729</h3>
+                    <p class="text-white text-center text-uppercase mb-0">TOTAL MEMBERS</p>
+                </div>
+                <div class="col-auto d-flex">
+                    <div class="separator mx-4 mx-lg-5"></div>
+                </div>
+                <div class="col-auto">
+                    <h3 class="text-white text-center text-uppercase font-weight-bold ls-2 mb-2">1.128.009</h3>
+                    <p class="text-white text-center text-uppercase mb-0">TOTAL WINNER</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-white mb-0">
+            Copyright &copy; 2019 <b>Monaco Pools.</b> All rights reserved.</p>
+    </div>
+</footer>
+    </body>
+</html>
