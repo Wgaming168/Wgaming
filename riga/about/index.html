@@ -1,0 +1,127 @@
+<html dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate" />
+		
+    <title>Riga Lottery 4D</title>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="/css/menu.css">
+    <link rel="shortcut icon" href="/images/favicon.webp" type="image/x-icon">
+	<link rel="icon" href="/images/favicon.webp" type="image/x-icon">
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/function.js"></script>
+	<script type="text/javascript">
+                var serverTime = new Date();
+        var clientTime = new Date();
+        var Diff = serverTime.getTime() - clientTime.getTime();	
+        function displayServerTime(){
+            var clientTime = new Date();
+            var time = new Date(clientTime.getTime() + Diff);
+            var sh = time.getHours().toString();
+            var sm = time.getMinutes().toString();
+            var ss = time.getSeconds().toString();
+			
+			var mydate=new Date();
+			var year=mydate.getYear();
+			if (year < 1000) year+=1900;
+			var day=mydate.getDay();
+			var month=mydate.getMonth();
+			var daym=mydate.getDate();
+			if (daym<10) daym="0"+daym;
+			var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+			var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+						
+            document.getElementById("curr_date").innerHTML = dayarray[day]+", "+daym+" "+montharray[month]+" "+year+"   "+
+															(sh.length==1?"0"+sh:sh) + ":" + (sm.length==1?"0"+sm:sm) + ":" + (ss.length==1?"0"+ss:ss);
+        }        
+    </script>
+
+</head>
+<body>
+<div class="header">
+	<div class="wrap" style="height:141px;">
+		<div class="logo"><img src="/images/rigapools.webp" width="280" /></div>
+		<div class="logo_right">
+			<div class="menu_mid">
+				<div class="menu_mid1"></div>
+			<div class="menu_bot days" align="right">
+			</div>
+			<div class="inner relative">
+					<nav id="navigation">
+						<ul id="main-menu">
+							<li><a href="/index.html">Home</a></li>
+							<li><a href="/result/index.html">History Result</a></li>
+							<li><a href="/about/index.html">About Us</a></li>
+						</ul>
+					</nav>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="wrap">
+	<div style="padding:10px 0px 0px 0px">
+<div class="body">
+    <div align="center">
+    <table width="98%" border="0" cellpadding="0" cellspacing="0">
+    </div>
+</div>
+</div>
+</div>
+
+<div class="content" style="text-align:justify;">
+    <h1>About Us</h1>
+    <p><strong>The Riga Lottery is an International Lottery available to play all over the world. It's an online lottery for everyone, everywhere, offering the chance to win bigger jackpots - along with other exciting prize tiers. The draw is once daily.</strong></p>
+    <p><strong>The content contained on this site only contains information about the Lottery and does not contain other information elements, if there is a slight error on our site, you can give us criticism and suggestions so that we can always develop so that both parties can enjoy it happily and safe.</strong></p>
+    <br>
+    <p><strong>Tips for gambling safely</strong></p>
+
+    <p><strong>- Gambling is a form of entertainment.</strong></p>
+    <p><strong>- Gambling is also a game of chance. Always make sure that the decision to play is your own decision.</strong></p>
+    <p><strong>- Limit capital according to how much you want to play.</strong></p>
+    <p><strong>- Look for existing formulas for guarantee victory.</strong></p>
+    <p><strong>- Determine how much time you spend, stop playing when the time is up.</strong></p>
+    <p><strong>- Make sure to know the rules of the game you are playing.</strong></p>
+    <p><strong>- Make sure that playing this gambling does not interfere with other activities in your life. Do not let it interfere with work and family.</strong></p>
+    <p><strong>- Make sure to always be calm when playing so that you can think clearly and the game will be calm.</strong></p>
+    <div style="min-height:100px;"></div>
+</div>
+    
+    <div class="wrap">
+        <center>
+        <div class="body2" style="padding-top:10px; border-top:1px solid #e40707;">
+            <p style="font-size:23px">Thankyou for participating</p>
+            
+            
+            <table border="0" width="100%" class="foot" style="text-align:center">
+                    <tr>
+                            <td><img src="/images/LOGO-RESULT.jpg"></td>
+                            <td><img src="/images/WA-CONTACT.jpg"></td>
+                            <td><img src="/images/Responsible.jpg"></td>
+                    </tr>
+            </table>
+            
+        </div>
+        </center>
+    </div>
+    <div class="wrap">
+        <div style="background-color:#000000; padding:15PX; font-size:12px; color:#F3D400; text-align: center; font-weight: bold;">
+            Copyright © 2010 - 2023. Riga Lottery. All Rights Reserved. This website is forbidden for people aged under 18 years.
+        <table  align="center" border="0" width="70%" class="foot" style="text-align:center">
+                    <tr>
+                            <td><img src="/images/play-it-safe-foot.png"></td>
+                            <td><img src="/images/response.png"></td>
+                            <td><img src="/images/care.png"></td>
+                    </tr>
+        </table>
+        </div>
+        
+        
+    </div>
+    
+    </body>
+    </html>
