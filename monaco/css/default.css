@@ -1,0 +1,192 @@
+/**** begin countdown colors ****/
+.flip-clock-wrapper ul,
+.flip-clock-wrapper ul li a div div.inn,
+.flip-clock-divider .flip-clock-dot {
+	background-color: var(--flipclock-bg-color);
+}
+.flip-clock-wrapper ul li a div div.inn {
+	color: var(--flipclock-color);
+}
+/**** endof countdown colors ****/
+
+/**** begin custom style ****/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    background-image: radial-gradient(#ffd400 0%, #a37100 100%);
+}
+
+hr {
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px dashed;
+    border-width: 5px;
+}
+     
+header {
+    display: block;
+    position: relative;
+}
+header .logo-wrapper {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -30px;
+    margin-bottom: 65px;
+    max-width: 150px;
+}
+header .logo-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    width: auto;
+    height: 30px;
+    border-left: 75px solid var(--color-9);
+    border-right: 75px solid var(--color-9);
+    border-bottom: 30px solid transparent;
+}
+header .logo-wrapper .web-logo {
+    width: 100%;
+}
+header .navbar.navbar-mini .navbar-nav > .nav-item {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.315);
+}
+header .navbar.navbar-mini .navbar-nav > .nav-item:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+header .navbar.navbar-mini .navbar-nav > .nav-item > .nav-link {
+    padding: 0 10px;
+    color: var(--color-9);
+}
+header .navbar.navbar-mini .navbar-nav > .nav-item.active > .nav-link {
+    color: var(--color-6);
+}
+header .description-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    line-height: 2;
+}
+
+section {
+    display: block;
+    position: relative;
+}
+section .card.card-content,
+section .card.card-content .card-body {
+    border-radius: 20px 20px 20px 20px;
+    z-index: 2;
+}
+section .banner-item {
+    display: block;
+    position: relative;
+}
+section .banner-item .banner-number {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(255, 132, 0, 0.35);
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+}
+section .banner-item .banner-icon {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+}
+section .banner-item .banner-icon img {
+    width: 100%;
+}
+section .banner-item .banner-text .banner-title {
+    font-size: 18px;
+}
+section .banner-item .banner-text .banner-description {
+    font-size: 12px;
+}
+section .time-wrapper {
+    display: block;
+    position: relative;
+    width: 215px;
+    border-radius: 20px 20px 0 0;
+    z-index: 1;
+}
+section .time-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    width: 80px;
+    height: auto;
+    background-color: var(--color-4);
+    border-radius: 20px 0 0 0;
+    transform: skewX(-20deg);
+}
+section .time-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -52px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 0 0 var(--color-4);
+    transform: skewX(-5deg);
+    z-index: -1;
+}
+section .text-date,
+section .text-title {
+    font-family: 'Pacifico', cursive;
+}
+
+footer {
+    display: block;
+    position: relative;
+    background-image: url(../images/line.png);
+    background-size: 100px;
+}
+footer .logo-wrapper {
+    position: relative;
+    max-width: 200px;
+    margin: 0 auto;
+}
+footer .logo-wrapper .web-logo {
+    width: 100%;
+}
+footer .info-box .separator {
+    display: block;
+    position: relative;
+    width: 1px;
+    height: 100%;
+    border-right: 1px solid var(--color-1);
+}
+
+
+
+.pagination .paginate_button a {
+    background-color: var(--color-3) !important;
+    border-color: var(--color-3) !important;
+    box-shadow: none !important;
+    color: var(--white) !important;
+    outline: none !important;
+}
+.pagination .paginate_button.active a {
+    background-color: var(--color-5) !important;
+    border-color: var(--color-5) !important;
+}
+/**** endof custom style ****/

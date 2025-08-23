@@ -1,0 +1,37 @@
+:root {
+    /**** begin countdown colors ****/
+    --flipclock-bg-color: #121212;
+    --flipclock-color: #ffffff;
+    /**** endof countdown colors ****/
+
+    /**** begin custom colors ****/
+    --color-1: #000000;
+    --color-2: #1a1a1a;
+    --color-3: #2e2e2e;
+    --color-4: #6a040f;
+    --color-5: #9d0208;
+    --color-6: #d00000;
+    --color-7: #faa307;
+    --color-8: #ffba08;
+    --color-9: #6a040f;
+
+    --gradient-1: radial-gradient(circle at center, var(--color-6), var(--color-4)) !important;
+    /**** endof custom colors ****/
+}
+
+/**** begin custom background colors ****/
+.bg-color-1 { background-color: var(--color-1) !important; }
+.bg-color-2 { background-color: var(--color-2) !important; }
+.bg-color-3 { background-color: var(--color-3) !important; }
+.bg-color-4 { background-color: var(--color-4) !important; }
+.bg-color-5 { background-color: var(--color-5) !important; }
+.bg-color-6 { background-color: var(--color-6) !important; }
+.bg-color-7 { background-color: var(--color-7) !important; }
+.bg-color-8 { background-color: var(--color-8) !important; }
+.bg-color-9 { background-color: var(--color-9) !important; }
+
+.bg-gradient-1 { background-image: var(--gradient-1) !important; }
+
+
+.text-danger { color: var(--color-6) !important; }
+/**** endof custom background colors ****/

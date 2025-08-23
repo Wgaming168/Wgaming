@@ -1,0 +1,75 @@
+/**** begin card style ****/
+.prize-wrapper .prize-block {
+    position: relative;
+    display: inline-block;
+    margin: 0 2.5px;
+    width: 40px;
+    height: 40px;
+    background-image: radial-gradient(circle at center, var(--color-9), var(--white));
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.65);
+}
+.prize-wrapper .prize-block:last-child,
+.prize-wrapper .prize-block:nth-last-child(2) {
+    background-image: radial-gradient(circle at center, var(--color-4), var(--color-1));
+}
+.prize-wrapper .prize-block.winner {
+    background-image: radial-gradient(circle at center, var(--color-8), var(--color-7));
+}
+.prize-wrapper .prize-block.winner:last-child,
+.prize-wrapper .prize-block.winner:nth-last-child(2) {
+    background-image: radial-gradient(circle at center, var(--color-8), var(--color-7));
+}
+.prize-wrapper .prize-block:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 16px;
+    height: 8px;
+    margin: 0 auto;
+    background-color: rgba(225, 225, 225, 0.45);
+    border-radius: 50px;
+}
+.prize-wrapper .prize-block:before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #07133080;
+    filter: blur(3px);
+}
+.prize-wrapper .prize-block .prize-digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: var(--color-1);
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.prize-wrapper .prize-block:last-child .prize-digit,
+.prize-wrapper .prize-block:nth-last-child(2) .prize-digit {
+    color: var(--color-9);
+}
+.prize-wrapper .prize-block.winner .prize-digit {
+    color: var(--color-1);
+}
+.prize-wrapper .prize-block.winner:last-child .prize-digit,
+.prize-wrapper .prize-block.winner:nth-last-child(2) .prize-digit {
+    color: var(--color-1);
+}
+/**** endof card style ****/

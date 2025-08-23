@@ -1,0 +1,37 @@
+/**** begin responsive style ****/
+@media (min-width: 993px) {
+    header .logo-wrapper {
+        max-width: 200px;
+    }
+    header .logo-wrapper::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        width: auto;
+        height: 30px;
+        border-left: 100px solid var(--color-9);
+        border-right: 100px solid var(--color-9);
+        border-bottom: 30px solid transparent;
+    }
+
+    .prize-wrapper .prize-block {
+        width: 35px;
+        height: 35px;
+    }
+    .prize-wrapper .prize-block.winner {
+        width: 40px;
+        height: 40px;
+    }
+    .prize-wrapper .prize-block .prize-digit {
+        font-size: 18px;
+    }
+    .prize-wrapper .prize-block.winner .prize-digit {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+}
+/**** endof responsive style ****/
