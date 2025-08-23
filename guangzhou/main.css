@@ -1,0 +1,220 @@
+
+/*
+Theme Name: Touchstone
+Version: 1.0
+Author: ProgressionStudios
+Author URI: http://themeforest.net/user/ProgressionStudios
+*/
+@import url(css/reset.css);
+@import url(css/standard.css);
+@import url(css/fancybox.css);
+@import url(css/orbit.css);
+@import url(css/nivo-slider.css);
+
+
+/* @import url(css/standard_wood.css);   */			/*  Wood Color Scheme */
+/* @import url(css/standard_purple.css); */   		/*  Purple Color Scheme */
+/* @import url(css/standard_gold.css);   */  		/*  Gold Color Scheme */
+/* @import url(css/standard_dark.css);   */   		/*  Dark Color Scheme */
+/* @import url(css/standard_green.css);  */   		/*  Green Color Scheme */
+/* @import url(css/standard_red.css);    */			/*  Red Color Scheme */
+
+/* @import url(css/standard_light_blue.css);   */    		/*  Light Blue Color Scheme */
+/* @import url(css/standard_light_red.css);    */  			/*  Light Red Color Scheme */
+/* @import url(css/standard_light_green.css);  */ 			/*  Light Green Color Scheme */
+/* @import url(css/standard_light_purple.css); */   		/*  Light Purple Color Scheme */
+/* @import url(css/standard_light_gold.css);   */ 			/*  Light Gold Color Scheme */
+/* @import url(css/standard_light_black.css);  */ 			/*  Light Black Color Scheme */
+/* @import url(css/standard_light.css);        */ 			/*  Light Color Scheme */
+
+
+/* @import url(css/standard_dark_blue.css);    */			/*  Dark Blue Color Scheme */
+/* @import url(css/standard_dark_red.css);    */			/*  Dark Red Color Scheme */
+/* @import url(css/standard_dark_purple.css);    */			/*  Dark Purple Color Scheme */
+/* @import url(css/standard_dark_green.css);    */			/*  Dark Green Color Scheme */
+
+.box4{
+    margin: 20px auto;
+    min-height: 400px;
+	height:100% !important;
+    width: 95%;
+    padding: 10px;
+    position:relative;
+    background: #444444;
+    border: 1px solid #ccc;
+  -webkit-box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box4:before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    top:0; right:0;
+    position:absolute;
+    z-index: -1;
+    -webkit-box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
+    -webkit-transform: rotate(2deg)
+                        translate(-14px,20px)
+                        skew(-20deg);
+}
+.box4:after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    top:0; left:0;
+    position:absolute;
+    z-index:-1;
+    display: inline-block;
+    -webkit-box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transform: rotate(2deg)
+                        translate(12px,25px)
+                           skew(20deg);
+}
+
+.shr_box4{
+    width: 100px;
+    height: 100px;
+    bottom:0; right:0;
+    position:absolute;
+    z-index: -1;
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transform: rotate(0deg)
+    translate(-20px,-15px)
+                       skew(20deg);
+}
+.shl_box4{
+    content: '';
+    width: 100px;
+    height: 100px;
+    bottom:0; left:0;
+    position:absolute;
+    z-index: -1;
+    -webkit-box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transform: rotate(0deg)
+    translate(20px,-15px)
+                       skew(-20deg);
+}
+
+.box4 img {
+    width: 95%;
+    margin: 15px;
+}
+
+p{ 
+    margin-top: 15px;
+    text-align: justify;
+}
+
+h1,h2,h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+	color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF !important;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #6B6B6B !important ;
+}  
+
+table.blueTable {
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.blueTable td, table.blueTable th {
+  border: 0px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.blueTable thead {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #0b9b12 100%);
+  border-bottom: 2px solid #444444;
+}
+table.blueTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #D0E4F5;
+}
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #D0E4F5;
+  background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  border-top: 2px solid #444444;
+}
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+table.rosyBrownTable {
+  border: 0px solid #FFA11E;
+  background-color: transparent;
+  width: 400px;
+  text-align: center;
+}
+table.rosyBrownTable td, table.rosyBrownTable th {
+  border: 0px solid #555555;
+  padding: 10px 10px;
+}
+table.rosyBrownTable tbody td {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFD700;
+  border-bottom: 1px solid grey;
+}
+table.rosyBrownTable tr:nth-child(even) {
+  background: transparent;
+}
+table.rosyBrownTable td:nth-child(even) {
+  background: transparent;
+}
+table.rosyBrownTable tfoot {
+  font-weight: bold;
+  background: #BA8697;
+  border-top: 1px solid #444444;
+}
+table.rosyBrownTable tfoot .links {
+  text-align: right;
+}
+table.rosyBrownTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #BA8697;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.cbalink {display:none;}
