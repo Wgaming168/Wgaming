@@ -1,0 +1,28 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  width: 100%;
+  display: table;
+}
+
+font,th,td,p,span,input,select {  	
+	font-family: "Abel", Arial;
+	font-size: 14px;
+	color: #000;
+}
+
+.menu_bottom {
+	font-family: "Abel", Arial;
+	font-size: 14px;
+	color: #ffffff;
+	text-decoration:none;	
+}
+
+.menu_bottom:hover {
+	font-family: "Abel", Arial;
+	font-size: 14px;
+	color: #ff9600;
+	text-decoration:none;
+}
+
