@@ -1,0 +1,223 @@
+/**** begin countdown colors ****/
+.flip-clock-wrapper ul,
+.flip-clock-wrapper ul li a div div.inn,
+.flip-clock-divider .flip-clock-dot {
+	background-color: var(--flipclock-bg-color);
+}
+.flip-clock-wrapper ul li a div div.inn {
+	color: var(--flipclock-color);
+}
+/**** endof countdown colors ****/
+
+/**** begin custom style ****/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+        background: url(/images/bghome.webp) #000;
+        background-size: 100%;
+        background-attachment: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      
+      @media only screen and (max-width:480px) {
+        body {
+            background: url(/images/bghome.webp) #000;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+.btn, .btn:focus, .btn:hover {
+    border: 0 !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+
+hr {
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px dashed;
+    border-width: 5px;
+}
+
+header {
+    display: block;
+    position: relative;
+}
+header .logo-wrapper {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 200px;
+}
+header .logo-wrapper img {
+    width: 100%;
+}
+header .navbar-main .navbar-nav > .nav-item {
+    margin-right: 10px;
+}
+header .navbar-main .navbar-nav > .nav-item:last-child {
+    margin-right: 0;
+}
+header .navbar-main .navbar-nav > .nav-item > .nav-link {
+    position: relative;
+    padding: 0 10px 0 20px;
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+header .navbar-main .navbar-nav > .nav-item:last-child > .nav-link {
+    padding-right: 0;
+}
+header .navbar-main .navbar-nav > .nav-item.active > .nav-link,
+header .navbar-main .navbar-nav > .nav-item:hover > .nav-link {
+    padding-left: 20px;
+    color: var(--color-9);
+}
+header .navbar-main .navbar-nav > .nav-item > .nav-link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: var(--white);
+    border-radius: 50px;
+}
+header .navbar-main .navbar-nav > .nav-item.active > .nav-link::before,
+header .navbar-main .navbar-nav > .nav-item:hover > .nav-link::before {
+    background-color: var(--color-9);
+}
+
+section {
+    display: block;
+    position: relative;
+}
+section.footer-bar .navbar.navbar-footer .navbar-nav > .nav-item {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.315);
+}
+section.footer-bar .navbar.navbar-footer .navbar-nav > .nav-item:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+section.footer-bar .navbar.navbar-footer .navbar-nav > .nav-item > .nav-link {
+    padding: 0 10px;
+    color: var(--color-9);
+}
+section .result-container {
+    display: block;
+    position: relative;
+    letter-spacing: 1.5px;
+}
+section .result-container .title-wrapper {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 320px;
+}
+section .result-container .title-wrapper .page-title {
+    font-size: 90px;
+    font-weight: 900;
+    line-height: .85;
+}
+section .result-container .title-wrapper .page-subtitle {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: .75;
+    letter-spacing: 5.5px;
+}
+section .result-container .title-wrapper .page-description {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: .75;
+    letter-spacing: 5.5px;
+}
+section .result-container .date-wrapper {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 300px;
+}
+section .result-container .date-wrapper .date,
+section .result-container .date-wrapper .time {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+section .result-container .date-wrapper .separator {
+    display: block;
+    position: relative;
+    margin: 0 5px;
+    width: 1px;
+    height: 30px;
+    background-color: var(--color-9);
+}
+section .card.card-banner,
+section .card.card-banner .card-body {
+    border-radius: 12px;
+}
+section .card.card-banner .card-body .banner-img {
+    position: relative;
+    padding: 6px;
+    border-radius: 12px;
+    max-width: 50px;
+}
+section .card.card-banner .card-body .banner-txt h5 {
+    font-size: 16px;
+}
+section .card.card-banner .card-body .banner-txt p {
+    line-height: 1 !important;
+}
+
+footer {
+    display: block;
+    position: relative;
+}
+footer .footer-separator {
+    display: block;
+    position: relative;
+    width: auto;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+}
+
+
+
+.line-height-1 {
+    line-height: 1 !important;
+}
+
+.pagination .paginate_button a {
+    background-color: var(--color-4) !important;
+    border-color: var(--color-4) !important;
+    box-shadow: none !important;
+    color: var(--white) !important;
+    outline: none !important;
+}
+.pagination .paginate_button.active a {
+    background-color: var(--color-6) !important;
+    border-color: var(--color-6) !important;
+    box-shadow: none !important;
+    color: var(--color-9) !important;
+    font-weight: 700;
+    outline: none !important;
+}
+
+table.dataTable {
+    margin: 0 !important;
+}
+
+/**** endof custom style ****/

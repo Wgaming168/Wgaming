@@ -1,0 +1,10 @@
+/**** begin responsive style ****/
+@media (min-width: 993px) {
+    header .navbar-main .navbar-nav > .nav-item > .nav-link {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+}
+/**** endof responsive style ****/
