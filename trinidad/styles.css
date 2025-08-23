@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #850f1f 0%, #3f070f 100%);
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #032541;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+    background: #03314d;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.pagination .page-numbers a {
+    color: #a5a5a5;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.active {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #fff;
+    text-align: center;
+}
+
+.results .result {
+    background: #03314d;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.result .date {
+    font-size: 1em;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.result .date span {
+    float: right;
+    font-weight: bolder;
+    color: #fbc531;
+}
+
+.result .numbers {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.result .numbers span {
+    float: right;
+    font-weight: bold;
+    color: #fbc531;
+    font-size: 20px;
+    width: 90px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #f00; /* You can change the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.result button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background: #fbc531;
+    border: none;
+    border-radius: 5px;
+    color: #032541;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.result button:hover {
+    background: #e1a300;
+}
+.articles {
+    margin-top: 20px;
+    background: #03314d;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.articles h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #fbc531;
+}
+
+.articles .article {
+    margin-bottom: 10px;
+}
+
+.articles .article p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.countdown {
+        margin: 10px 10px;
+        padding: 10px 10px;
+        font-size: 15px;
+        font-weight: bolder;
+        color: #fbc531;
+        text-align: center;
+        align-items: center;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        background: #951223;
+    }
+
+    .footer {
+        background: #ffffff;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 1px;
+    }
+    
+    .footer p {
+        margin: 0;
+        padding: 10px 0;
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+    }
+    
+    .footer-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .footer-images img {
+        margin: 0 10px;
+    }
+      
