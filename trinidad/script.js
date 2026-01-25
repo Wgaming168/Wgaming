@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentPage = 1;
 
     const results = [
+        { date: '26 JAN 2026', numbers: '2 5 5 1' },
         { date: '25 JAN 2026', numbers: '2 7 0 9' },
         { date: '24 JAN 2026', numbers: '4 6 4 8' },
         { date: '23 JAN 2026', numbers: '1 0 3 8' },
