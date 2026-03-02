@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const results = [
         
+        { date: '03 MAR 2026', numbers: '6 3 2 1' }
         { date: '02 MAR 2026', numbers: '4 6 6 4' }
         { date: '01 MAR 2026', numbers: '2 5 1 2' },
         { date: '28 FEB 2026', numbers: '1 3 3 8' },
