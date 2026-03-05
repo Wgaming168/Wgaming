@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const results = [
         
-        
+        { date: '06 MAR 2026', numbers: '7 7 5 6' },
         { date: '05 MAR 2026', numbers: '3 2 1 4' },
         { date: '04 MAR 2026', numbers: '9 6 3 2' }, 
         { date: '03 MAR 2026', numbers: '6 3 2 1' },
