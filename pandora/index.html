@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Pandora Lottery - Open the magical boxes to reveal today's winning numbers!">
+    <title>Pandora Lottery | Magic Box Opening</title>
+    
+    <!-- Google Fonts - Modern & Playful -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Fredoka+One&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Pacifico', cursive;
+            background: linear-gradient(135deg, red, yellow, green, blue, aqua, yellowgreen);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+            animation: bgPulse 10s ease-in-out infinite;
+        }
+
+        @keyframes bgPulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        /* Welcome Popup - Modern Design */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(20px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .popup-content {
+            background: linear-gradient(135deg, #FF6B6B, #4ECDC4, #45B7D1);
+            border-radius: 40px;
+            padding: 60px;
+            text-align: center;
+            max-width: 550px;
+            margin: 20px;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .popup-content::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .popup-icon {
+            font-size: 80px;
+            animation: bounce 1s ease infinite;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .popup-content h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 42px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff, #ffe6b3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .popup-content p {
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 30px;
+            font-size: 18px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .journey-btn {
+            background: linear-gradient(135deg, #FFE66D, #FF6B6B);
+            border: none;
+            padding: 16px 48px;
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Pacifico', cursive;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .journey-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Journey Animation */
+        .journey-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4);
+            background-size: 400% 400%;
+            animation: gradientShift 1s ease forwards, journeyFadeOut 2s ease forwards;
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        @keyframes journeyFadeOut {
+            0% { opacity: 1; transform: scale(1); }
+            80% { opacity: 0.8; transform: scale(1.05); }
+            100% { opacity: 0; visibility: hidden; }
+        }
+
+        .magical-path {
+            text-align: center;
+        }
+
+        .magical-path i {
+            font-size: 70px;
+            margin: 0 20px;
+            animation: bounceRotate 0.8s ease infinite;
+            display: inline-block;
+            color: white;
+            text-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        @keyframes bounceRotate {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(15deg); }
+        }
+
+        .magical-path div {
+            margin-top: 40px;
+            font-size: 28px;
+            font-weight: 500;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        /* Main Content */
+        .main-content {
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            animation: contentFadeIn 1s ease forwards;
+            animation-delay: 2s;
+        }
+
+        @keyframes contentFadeIn {
+            to { opacity: 1; }
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header - Modern */
+        .header {
+            text-align: center;
+            padding: 30px;
+            background: rgb(0 0 0 / 35%);
+            backdrop-filter: blur(20px);
+            border-radius: 60px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .logo {
+            font-family: 'Pacifico', cursive;
+            font-size: 52px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #FFE66D, #FF6B6B, #4ECDC4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .date-time {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .date-card, .time-card {
+            background: rgba(255,255,255,0.2);
+            padding: 12px 24px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            font-weight: 500;
+            color: white;
+        }
+
+        /* Navigation - Modern */
+        nav {
+            background: rgb(0 0 0 / 35%);
+            backdrop-filter: blur(20px);
+            border-radius: 60px;
+            padding: 8px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+            background: rgba(255,255,255,0.1);
+        }
+
+        nav ul li a:hover {
+            background: linear-gradient(135deg, #FF6B6B, #FFE66D);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Pandora Boxes Section - Colorful */
+        .boxes-section {
+            background: rgb(0 0 0 / 35%);
+            backdrop-filter: blur(20px);
+            border-radius: 40px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .boxes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .box-card {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            border-radius: 30px;
+            padding: 35px 25px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .box-card:nth-child(1) { background: linear-gradient(135deg, #FF6B6B, #FF8E53); }
+        .box-card:nth-child(2) { background: linear-gradient(135deg, #4ECDC4, #96CEB4); }
+        .box-card:nth-child(3) { background: linear-gradient(135deg, #FFE66D, #FF6B6B); }
+        .box-card:nth-child(4) { background: linear-gradient(135deg, #A8E6CF, #FFD3B5); }
+
+        .box-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .box-card:hover::before {
+            opacity: 1;
+        }
+
+        .box-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.3);
+        }
+
+        .box-card.opening {
+            animation: shakeBox 0.5s ease;
+        }
+
+        @keyframes shakeBox {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-8px); }
+            75% { transform: translateX(8px); }
+        }
+
+        .box-icon {
+            font-size: 70px;
+            margin-bottom: 20px;
+            transition: all 0.5s;
+        }
+
+        .box-card.opening .box-icon {
+            animation: spinBox 0.5s ease;
+        }
+
+        @keyframes spinBox {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .box-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 20px;
+            font-family: 'Pacifico', cursive;
+        }
+
+        .box-number {
+            font-size: 56px;
+            font-weight: 800;
+            color: white;
+            font-family: 'Poppins', monospace;
+            margin: 20px 0;
+            opacity: 0;
+            transform: scale(0) rotate(-180deg);
+            transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .box-card.revealed .box-number {
+            opacity: 1;
+            transform: scale(1) rotate(0deg);
+        }
+
+        .box-prize {
+            font-size: 14px;
+            color: rgba(255,255,255,0.9);
+            font-weight: 500;
+        }
+
+        .open-all-btn {
+            text-align: center;
+        }
+
+        .magic-btn {
+            background: linear-gradient(135deg, #FFE66D, #FF6B6B);
+            border: none;
+            padding: 14px 40px;
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Pacifico', cursive;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom: 15px;
+        }
+
+        .magic-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        /* Countdown Section - Modern */
+        .countdown-section {
+            background: rgb(0 0 0 / 35%);
+            backdrop-filter: blur(20px);
+            border-radius: 40px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .countdown-block {
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+            padding: 25px;
+            border-radius: 25px;
+            min-width: 120px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .countdown-number {
+            font-size: 56px;
+            font-weight: 800;
+            font-family: 'Poppins', monospace;
+            background: linear-gradient(135deg, #FFE66D, #FF6B6B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .countdown-label {
+            font-size: 14px;
+            margin-top: 8px;
+            color: white;
+            font-weight: 500;
+        }
+
+        /* History Section - Modern */
+        .history-section {
+            background: rgb(0 0 0 / 35%);
+            backdrop-filter: blur(20px);
+            border-radius: 40px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            gap: 15px;
+        }
+
+        .history-table-container {
+            overflow-x: auto;
+        }
+
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .history-table th {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            color: white;
+            padding: 18px;
+            font-weight: 500;
+        }
+
+        .history-table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .history-table tr:hover {
+            background: #FFF5E6;
+        }
+
+        .history-numbers {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .history-ball {
+            display: inline-block;
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            color: white;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .auto-delete-info {
+            background: rgba(255,255,255,0.9);
+            padding: 15px;
+            border-radius: 20px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: #FF6B6B;
+            font-weight: 500;
+        }
+
+        /* Gamble Aware Section - Modern */
+        .gamble-aware {
+            background: rgb(0 0 0 / 35%);
+            backdrop-filter: blur(20px);
+            border-radius: 40px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .aware-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .help-btn {
+            background: rgba(255,255,255,0.2);
+            padding: 12px 28px;
+            border-radius: 60px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .help-btn:hover {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255,255,255,0.8);
+            font-size: 12px;
+        }
+
+        .back-home-btn {
+            background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+            border: none;
+            padding: 12px 28px;
+            border-radius: 60px;
+            color: white;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .back-home-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 32px;
+            }
+            
+            .boxes-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .countdown-block {
+                min-width: 90px;
+                padding: 15px;
+            }
+            
+            .countdown-number {
+                font-size: 36px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .popup-content {
+                padding: 40px 30px;
+            }
+            
+            .popup-content h2 {
+                font-size: 32px;
+            }
+            
+            .box-number {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Welcome Popup -->
+<div class="popup-overlay" id="welcomePopup">
+    <div class="popup-content">
+        <div class="popup-icon">
+            <i class="fas fa-box-open"></i>
+        </div>
+        <h2>Welcome to Pandora!</h2>
+        <p>Open the magical boxes to reveal today's winning numbers. Ready for the journey?</p>
+        <button class="journey-btn" onclick="startJourney()">
+            <i class="fas fa-magic"></i> Begin Pandora Journey
+        </button>
+    </div>
+</div>
+
+<!-- Journey Animation -->
+<div id="journeyAnimation" style="display: none;" class="journey-animation">
+    <div class="magical-path">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-magic"></i>
+        <i class="fas fa-gem"></i>
+        <i class="fas fa-crown"></i>
+        <i class="fas fa-box-open"></i>
+        <div>Opening Pandora's Magic Boxes...</div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="main-content" id="mainContent" style="display: none;">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-box-open"></i> Pandora Lottery
+            </div>
+            <div class="date-time">
+                <div class="date-card">
+                    <i class="fas fa-calendar"></i> <span id="currentDate"></span>
+                </div>
+                <div class="time-card">
+                    <i class="fas fa-clock"></i> <span id="currentTime"></span>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showHome(); return false;"><i class="fas fa-gift"></i> Magic Boxes</a></li>
+                <li><a href="#" onclick="showHistory(); return false;"><i class="fas fa-history"></i> History</a></li>
+            </ul>
+        </nav>
+
+        <!-- Home Content -->
+        <div id="homeContent">
+            <!-- Pandora Boxes Section -->
+            <div class="boxes-section">
+                <div class="open-all-btn">
+                    <button class="magic-btn" onclick="openAllBoxes()">
+                        <i class="fas fa-magic"></i> Open All Boxes!
+                    </button>
+                </div>
+                <div class="boxes-grid" id="boxesGrid">
+                    <div class="box-card" data-box="1" onclick="openBox(1)">
+                        <div class="box-icon" style="margin-bottom: 5px;">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="box-title">First Magic Box</div>
+                        <div class="box-number" id="box1Number"></div>
+                        <div class="box-prize">🏆 Grand Prize: $1,000,000</div>
+                    </div>
+                    <div class="box-card" data-box="2" onclick="openBox(2)">
+                        <div class="box-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="box-title">Second Magic Box</div>
+                        <div class="box-number" id="box2Number"></div>
+                        <div class="box-prize">🥈 Second Prize: $500,000</div>
+                    </div>
+                    <div class="box-card" data-box="3" onclick="openBox(3)">
+                        <div class="box-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="box-title">Third Magic Box</div>
+                        <div class="box-number" id="box3Number"></div>
+                        <div class="box-prize">🥉 Third Prize: $250,000</div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Countdown Section -->
+            <div class="countdown-section">
+                <div class="section-title">
+                    <i class="fas fa-hourglass-half"></i> Next Pandora Draw
+                </div>
+                <div class="countdown-timer" id="countdownTimer">
+                    <div class="countdown-block">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-block">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-block">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+                <div style="margin-top: 20px; color: white;">
+                    <i class="fas fa-clock"></i> Daily Draw at 22:00 GMT+7
+                </div>
+            </div>
+
+            <!-- Gamble Aware Section -->
+            <div class="gamble-aware" id="helpSection">
+                <div class="section-title" style="font-size: 28px;">
+                    <i class="fas fa-heart"></i> Play with Magic, Play Responsibly
+                </div>
+                <p style="color: white;">Lotteries are magical games of chance. Set your limits and enjoy the journey!</p>
+                <div class="aware-buttons">
+                    <a href="#" class="help-btn"><i class="fas fa-phone-alt"></i> Gambling Help: 1800 858 858</a>
+                    <a href="#" class="help-btn"><i class="fas fa-globe"></i> Gambling Help Online</a>
+                    <a href="#" class="help-btn"><i class="fas fa-comment"></i> 24/7 Support</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Content (Hidden) -->
+        <div id="historyContent" style="display: none;">
+            <div class="history-section">
+                <div class="history-header">
+                    <div class="section-title" style="margin-bottom: 0; font-size: 28px;">
+                        <i class="fas fa-history"></i> Pandora's History
+                    </div>
+                    <button class="back-home-btn" onclick="showHome(); return false;">
+                        <i class="fas fa-arrow-left"></i> Back to Magic
+                    </button>
+                </div>
+                <div class="auto-delete-info">
+                    <i class="fas fa-info-circle"></i> Magical results disappear after 14 days!
+                </div>
+                <div class="history-table-container" id="historyTableContainer"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>© 2026 Pandora Lottery | Open the magic, play responsibly | For ages 18+</p>
+        </footer>
+    </div>
+</div>
+
+<script src="pandora-data.js"></script>
+<script src="pandora-auto-delete.js"></script>
+<script>
+    let boxesOpened = [false, false, false, false];
+    
+    // Journey animation
+    function startJourney() {
+        document.getElementById('welcomePopup').style.display = 'none';
+        const journey = document.getElementById('journeyAnimation');
+        journey.style.display = 'flex';
+        
+        setTimeout(() => {
+            journey.style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }, 2000);
+    }
+    
+    // Open single box
+    function openBox(boxNum) {
+        if (boxesOpened[boxNum-1]) return;
+        
+        const boxCard = document.querySelector(`[data-box="${boxNum}"]`);
+        boxCard.classList.add('opening');
+        
+        setTimeout(() => {
+            boxCard.classList.remove('opening');
+            boxCard.classList.add('revealed');
+            boxesOpened[boxNum-1] = true;
+            
+            // Get number from data
+            const number = getNumberForBox(boxNum);
+            document.getElementById(`box${boxNum}Number`).textContent = number;
+            
+            // Add confetti effect
+            createConfetti();
+        }, 500);
+    }
+    
+    // Open all boxes
+    function openAllBoxes() {
+        for (let i = 1; i <= 4; i++) {
+            if (!boxesOpened[i-1]) {
+                setTimeout(() => openBox(i), (i-1) * 600);
+            }
+        }
+    }
+    
+    // Get number for box
+    function getNumberForBox(boxNum) {
+        if (typeof lotteryData !== 'undefined' && lotteryData.length > 0) {
+            const latest = lotteryData[0];
+            if (boxNum === 1) return latest.first;
+            if (boxNum === 2) return latest.second;
+            if (boxNum === 3) return latest.third;
+            if (boxNum === 4) return latest.bonus || "7777";
+        }
+        return "????";
+    }
+    
+    // Load today's numbers into boxes
+    function loadBoxNumbers() {
+        if (typeof lotteryData !== 'undefined' && lotteryData.length > 0) {
+            const today = new Date();
+            const todayStr = today.toISOString().split('T')[0];
+            const todayResult = lotteryData.find(d => d.date === todayStr) || lotteryData[0];
+            
+            document.getElementById('box1Number').textContent = todayResult.first;
+            document.getElementById('box2Number').textContent = todayResult.second;
+            document.getElementById('box3Number').textContent = todayResult.third;
+            document.getElementById('box4Number').textContent = todayResult.bonus || "7777";
+            
+            // Mark as revealed
+            for (let i = 1; i <= 4; i++) {
+                boxesOpened[i-1] = true;
+                document.querySelector(`[data-box="${i}"]`).classList.add('revealed');
+            }
+        }
+    }
+    
+    // Confetti effect
+    function createConfetti() {
+        const colors = ['#FF6B6B', '#4ECDC4', '#FFE66D', '#A8E6CF', '#FF8E53', '#96CEB4'];
+        for (let i = 0; i < 60; i++) {
+            const confetti = document.createElement('div');
+            confetti.innerHTML = ['🎉', '✨', '🎁', '💎', '🌟', '🎈'][Math.floor(Math.random() * 6)];
+            confetti.style.position = 'fixed';
+            confetti.style.left = Math.random() * 100 + '%';
+            confetti.style.top = '-20px';
+            confetti.style.fontSize = (Math.random() * 25 + 15) + 'px';
+            confetti.style.pointerEvents = 'none';
+            confetti.style.zIndex = '9999';
+            confetti.style.animation = `fall ${Math.random() * 2 + 1.5}s linear forwards`;
+            document.body.appendChild(confetti);
+            
+            setTimeout(() => confetti.remove(), 2500);
+        }
+    }
+    
+    // Add fall animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+    
+    // Page navigation
+    function showHome() {
+        document.getElementById('homeContent').style.display = 'block';
+        document.getElementById('historyContent').style.display = 'none';
+    }
+    
+    function showHistory() {
+        document.getElementById('homeContent').style.display = 'none';
+        document.getElementById('historyContent').style.display = 'block';
+        renderHistoryTable();
+    }
+    
+    function scrollToHelp() {
+        document.getElementById('helpSection').scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // Render history table
+    function renderHistoryTable() {
+        if (typeof lotteryData === 'undefined') {
+            document.getElementById('historyTableContainer').innerHTML = '<div class="auto-delete-info">Loading magical history...</div>';
+            return;
+        }
+        
+        if (lotteryData.length === 0) {
+            document.getElementById('historyTableContainer').innerHTML = '<div class="auto-delete-info">No magical results yet!</div>';
+            return;
+        }
+        
+        var html = '<table class="history-table">';
+        html += '<thead><tr>';
+        html += '<th>Date</th>';
+        html += '<th>Box 1 (1st Prize)</th>';
+        html += '<th>Box 2 (2nd Prize)</th>';
+        html += '<th>Box 3 (3rd Prize)</th>';
+        html += '</tr></thead><tbody>';
+        
+        for (var i = 0; i < lotteryData.length; i++) {
+            var draw = lotteryData[i];
+            var formattedDate = formatDate(draw.date);
+            
+            html += '<tr>';
+            html += '<td>' + formattedDate + '</td>';
+            html += '<td><div class="history-numbers">' + formatNumberWithBalls(draw.first) + '</div></td>';
+            html += '<td><div class="history-numbers">' + formatNumberWithBalls(draw.second) + '</div></td>';
+            html += '<td><div class="history-numbers">' + formatNumberWithBalls(draw.third) + '</div></td>';
+            html += '</tr>';
+        }
+        
+        html += '</tbody></table>';
+        document.getElementById('historyTableContainer').innerHTML = html;
+    }
+    
+    function formatNumberWithBalls(number) {
+        var numStr = number.toString();
+        var balls = '';
+        for (var i = 0; i < numStr.length; i++) {
+            balls += '<span class="history-ball">' + numStr[i] + '</span>';
+        }
+        return balls;
+    }
+    
+    function formatDate(dateStr) {
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var parts = dateStr.split('-');
+        return parts[2] + ' ' + months[parseInt(parts[1])-1] + ' ' + parts[0];
+    }
+    
+    // Current date and time
+    function updateDateTime() {
+        var now = new Date();
+        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        
+        document.getElementById('currentDate').innerHTML = days[now.getDay()] + ', ' + now.getDate() + ' ' + months[now.getMonth()] + ' ' + now.getFullYear();
+        document.getElementById('currentTime').innerHTML = now.toLocaleTimeString();
+    }
+    
+    // Countdown to 22:00 GMT+7
+    function updateCountdown() {
+        var now = new Date();
+        var target = new Date();
+        
+        // Set target to 22:00 GMT+7 (15:00 UTC)
+        target.setUTCHours(15, 0, 0, 0);
+        
+        if (now >= target) {
+            target.setUTCDate(target.getUTCDate() + 1);
+        }
+        
+        var diff = target - now;
+        
+        var hours = Math.floor(diff / 3600000);
+        var minutes = Math.floor((diff % 3600000) / 60000);
+        var seconds = Math.floor((diff % 60000) / 1000);
+        
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+    
+    // Initialize
+    setInterval(updateDateTime, 1000);
+    setInterval(updateCountdown, 1000);
+    updateDateTime();
+    updateCountdown();
+    loadBoxNumbers();
+</script>
+</body>
+</html>
