@@ -78,12 +78,5 @@ var lotteryData = [
         draw12am: "7648",
         draw2am: "6351",
         draw4am: "6419"
-    },
-    {
-        date: "2026-03-20",
-        draw10pm: "9261",
-        draw12am: "5337",
-        draw2am: "3285",
-        draw4am: "8402"
     }
 ];
