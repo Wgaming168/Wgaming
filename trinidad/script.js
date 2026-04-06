@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentPage = 1;
 
     const results = [
+        { date: '06 APR 2026', numbers: '2 5 3 9' },
         { date: '05 APR 2026', numbers: '9 1 5 7' },
         { date: '04 APR 2026', numbers: '6 4 1 2' },
         { date: '03 APR 2026', numbers: '9 4 5 9' },
@@ -86,19 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { date: '23 JAN 2026', numbers: '1 0 3 8' },
         { date: '22 JAN 2026', numbers: '3 7 0 2' },
         { date: '21 JAN 2026', numbers: '4 6 4 9' },
-        { date: '20 JAN 2026', numbers: '4 4 6 1' },
-        { date: '19 JAN 2026', numbers: '2 4 8 0' },
-        { date: '18 JAN 2026', numbers: '0 3 8 5' },
-        { date: '17 JAN 2026', numbers: '4 8 0 4' },
-        { date: '16 JAN 2026', numbers: '7 1 5 8' },
-        { date: '15 JAN 2026', numbers: '4 9 0 5' },
-        { date: '14 JAN 2026', numbers: '9 5 8 4' },
-        { date: '13 JAN 2026', numbers: '2 9 5 4' },
-        { date: '12 JAN 2026', numbers: '9 0 2 8' },
-        { date: '11 JAN 2026', numbers: '9 6 1 9' },
-        { date: '10 JAN 2026', numbers: '7 4 9 2' },
-        { date: '09 JAN 2026', numbers: '4 3 8 1' },
-        { date: '08 JAN 2026', numbers: '3 8 4 3' },
     
         
         
