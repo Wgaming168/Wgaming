@@ -2,6 +2,13 @@
 // 4 daily draws: 10 PM, 12 AM, 02 AM, 04 AM GMT+7
 
 var lotteryData = [
+     {
+        date: "2026-04-22",
+        draw10pm: "3355",
+        draw12am: "----",
+        draw2am: "----",
+        draw4am: "----"
+    },
     {
         date: "2026-04-21",
         draw10pm: "1251",
