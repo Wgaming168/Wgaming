@@ -4,55 +4,55 @@ var lotteryData = [
         first: "4762",
         second: "9046",
         third: "0047"
-    }
+    },
    {
         date: "2026-05-10",
         first: "3904",
         second: "3258",
         third: "6219"
-    }
+    },
    {
         date: "2026-05-09",
         first: "5780",
         second: "6057",
         third: "5830"
-    }
+    },
    {
         date: "2026-05-08",
         first: "6308",
         second: "0036",
         third: "8106"
-    }
+    },
    {
         date: "2026-05-07",
         first: "2983",
         second: "3265",
         third: "7813"
-    }
+    },
    
         date: "2026-05-06",
         first: "0537",
         second: "9354",
         third: "0297"
-    }
+    },
    {
         date: "2026-05-05",
         first: "8421",
         second: "0036",
         third: "7365"
-    }
+    },
    {
         date: "2026-05-04",
         first: "9027",
         second: "3025",
         third: "9354"
-    }
+    },
    {
         date: "2026-05-03",
         first: "0421",
         second: "1128",
         third: "6371"
-    }
+    },
    {
         date: "2026-05-02",
         first: "8601",
@@ -220,11 +220,5 @@ var lotteryData = [
         first: "0967",
         second: "1280",
         third: "6648"
-    },
-    {
-        date: "2026-04-04",
-        first: "2573",
-        second: "0031",
-        third: "6984"
     }
 ];
