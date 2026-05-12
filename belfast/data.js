@@ -2,6 +2,12 @@
 // Just add new entries at the top with today's date and winning numbers
 var lotteryData = [
     {
+        date: "2026-05-12",
+        first: "2281",
+        second: "0365",
+        third: "7391"
+    },
+    {
         date: "2026-05-11",
         first: "1834",
         second: "0297",
@@ -186,12 +192,6 @@ var lotteryData = [
         first: "6273",
         second: "3158",
         third: "9125"
-    },
-    {
-        date: "2026-04-08",
-        first: "8801",
-        second: "1204",
-        third: "5613"
     }
    
 ];
