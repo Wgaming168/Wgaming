@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentPage = 1;
 
     const results = [
+        { date: '01 JUL 2026', numbers: '6 5 4 7' },
         { date: '30 JUN 2026', numbers: '3 2 5 1' },
         { date: '29 JUN 2026', numbers: '8 4 9 5' },
         { date: '28 JUN 2026', numbers: '1 1 6 3' },
@@ -146,32 +147,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { date: '18 FEB 2026', numbers: '1 9 8 2' },
         { date: '17 FEB 2026', numbers: '8 4 3 6' },
         { date: '16 FEB 2026', numbers: '9 5 1 8' },
-        { date: '15 FEB 2026', numbers: '2 8 3 1' },
-        { date: '14 FEB 2026', numbers: '3 9 6 2' },
-        { date: '13 FEB 2026', numbers: '7 2 3 8' },
-        { date: '12 FEB 2026', numbers: '5 9 4 1' },
-        { date: '11 FEB 2026', numbers: '4 2 8 4' },
-        { date: '10 FEB 2026', numbers: '7 2 3 6' },
-        { date: '09 FEB 2026', numbers: '5 4 8 9' },
-        { date: '08 FEB 2026', numbers: '8 0 4 1' },
-        { date: '07 FEB 2026', numbers: '9 5 6 3' },
-        { date: '06 FEB 2026', numbers: '4 4 0 4' },        
-        { date: '05 FEB 2026', numbers: '2 6 9 3' },
-        { date: '04 FEB 2026', numbers: '6 3 2 2' },
-        { date: '03 FEB 2026', numbers: '1 9 9 6' },
-        { date: '02 FEB 2026', numbers: '9 4 6 7' },
-        { date: '01 FEB 2026', numbers: '5 5 2 3' },     
-        { date: '31 JAN 2026', numbers: '7 9 1 6' },
-        { date: '30 JAN 2026', numbers: '9 5 3 1' },
-        { date: '29 JAN 2026', numbers: '2 6 5 8' },
-        { date: '28 JAN 2026', numbers: '8 6 2 5' },
-        { date: '27 JAN 2026', numbers: '3 5 8 2' },
-        { date: '26 JAN 2026', numbers: '2 5 5 1' },
-        { date: '25 JAN 2026', numbers: '2 7 0 9' },
-        { date: '24 JAN 2026', numbers: '4 6 4 8' },
-        { date: '23 JAN 2026', numbers: '1 0 3 8' },
-        { date: '22 JAN 2026', numbers: '3 7 0 2' },
-        { date: '21 JAN 2026', numbers: '4 6 4 9' },
     
         
         
