@@ -223,6 +223,5 @@ var lotteryData = [
         first: "8495",
         second: "7261",
         third: "4257"
-    },
-    
+    }, 
 ];
