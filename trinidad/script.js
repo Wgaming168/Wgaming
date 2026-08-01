@@ -150,23 +150,8 @@ document.addEventListener('DOMContentLoaded', function() {
         { date: '18 MAR 2026', numbers: '6 9 7 3' },
         { date: '17 MAR 2026', numbers: '9 1 0 7' },
         { date: '16 MAR 2026', numbers: '7 0 6 5' },
-        { date: '15 MAR 2026', numbers: '0 3 8 2' },
-        { date: '14 MAR 2026', numbers: '9 3 6 2' },
-        { date: '13 MAR 2026', numbers: '1 2 1 3' },
-        { date: '12 MAR 2026', numbers: '3 8 0 4' },
-        { date: '11 MAR 2026', numbers: '1 7 4 5' },
-        { date: '10 MAR 2026', numbers: '0 6 9 5' },
-        { date: '09 MAR 2026', numbers: '3 5 1 8' },
-        { date: '08 MAR 2026', numbers: '8 1 1 0' },
-        { date: '07 MAR 2026', numbers: '6 1 4 8' },
-        { date: '06 MAR 2026', numbers: '7 7 5 6' },
-        { date: '05 MAR 2026', numbers: '3 2 1 4' },
-        { date: '04 MAR 2026', numbers: '9 6 3 2' }, 
-        { date: '03 MAR 2026', numbers: '6 3 2 1' },
-        { date: '02 MAR 2026', numbers: '4 6 6 4' },
-        { date: '01 MAR 2026', numbers: '2 5 1 2' },
-    
-        
+
+
         
         // Add more results here
     ];
