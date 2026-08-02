@@ -5,6 +5,13 @@ var lotteryData = [
     
     
     {
+        date: "2026-08-02",
+        draw10pm: "4862",
+        draw12am: "0000",
+        draw2am: "0000",
+        draw4am: "0000"
+    },
+    {
         date: "2026-08-01",
         draw10pm: "0373",
         draw12am: "1530",
@@ -45,13 +52,6 @@ var lotteryData = [
         draw12am: "8471",
         draw2am: "9876",
         draw4am: "4052"
-    },
-    {
-        date: "2026-07-26",
-        draw10pm: "9676",
-        draw12am: "2369",
-        draw2am: "4780",
-        draw4am: "5037"
     }
     
 ];
