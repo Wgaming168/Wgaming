@@ -2,7 +2,12 @@
 // Easy daily updates - just add new entry at top with today's date
 
 var lotteryData = [
-    
+    {
+        date: "2026-08-04",
+        first: "9472",
+        second: "7741",
+        third: "6782"
+    },
     {
         date: "2026-08-03",
         first: "4850",
