@@ -1,6 +1,13 @@
 // Lottery Data - Easy to update daily
 // Just add new entries at the top with today's date and winning numbers
 var lotteryData = [
+    
+    {
+        date: "2026-08-11",
+        first: "5205",
+        second: "2587",
+        third: "3698"
+    },
     {
         date: "2026-08-10",
         first: "7804",
@@ -30,11 +37,5 @@ var lotteryData = [
         first: "4027",
         second: "6503",
         third: "9072"
-    },
-    {
-        date: "2026-08-05",
-        first: "2641",
-        second: "0981",
-        third: "3357"
     }
 ];
