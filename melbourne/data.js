@@ -350,53 +350,5 @@ var lotteryData = [
         second: "9640",
         third: "1721"
     },
-    {
-        date: "2026-07-02",
-        first: "6412",
-        second: "7650",
-        third: "4015"
-    },
-    {
-        date: "2026-07-01",
-        first: "8307",
-        second: "1092",
-        third: "6231"
-    },
-    {
-        date: "2026-06-30",
-        first: "9541",
-        second: "6654",
-        third: "4189"
-    },
-    {
-        date: "2026-06-29",
-        first: "3596",
-        second: "8503",
-        third: "6712"
-    },
-    {
-        date: "2026-06-28",
-        first: "6920",
-        second: "6306",
-        third: "1865"
-    },
-    {
-        date: "2026-06-27",
-        first: "4075",
-        second: "2250",
-        third: "6242"
-    },
-    {
-        date: "2026-06-26",
-        first: "2683",
-        second: "8607",
-        third: "7021"
-    },
-    {
-        date: "2026-06-25",
-        first: "7139",
-        second: "4301",
-        third: "9694"
-    },
     
 ];
