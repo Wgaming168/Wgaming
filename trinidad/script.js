@@ -110,25 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
         { date: '09 JUN 2026', numbers: '7 4 0 2' },
         { date: '08 JUN 2026', numbers: '6 1 3 0' },
         { date: '07 JUN 2026', numbers: '1 8 2 8' },
-        { date: '06 JUN 2026', numbers: '4 2 7 9' },
-        { date: '05 JUN 2026', numbers: '8 5 4 1' },
-        { date: '04 JUN 2026', numbers: '0 2 6 7' },
-        { date: '03 JUN 2026', numbers: '5 0 7 3' },
-        { date: '02 JUN 2026', numbers: '6 1 2 5' },
-        { date: '01 JUN 2026', numbers: '4 9 8 6' },
-        { date: '31 MEI 2026', numbers: '3 1 0 9' },
-        { date: '30 MEI 2026', numbers: '5 7 3 1' },
-        { date: '29 MEI 2026', numbers: '2 4 9 7' },
-        { date: '28 MEI 2026', numbers: '9 5 4 0' },
-        { date: '27 MEI 2026', numbers: '2 6 5 8' },
-        { date: '26 MEI 2026', numbers: '5 0 6 4' },
-        { date: '25 MEI 2026', numbers: '8 6 1 9' },
-        { date: '24 MEI 2026', numbers: '5 3 7 6' },
-        { date: '23 MEI 2026', numbers: '9 3 3 2' },
-        { date: '22 MEI 2026', numbers: '4 0 2 8' },
-        { date: '21 MEI 2026', numbers: '1 5 8 4' },
-        { date: '20 MEI 2026', numbers: '6 0 2 1' },
-
 
         
         // Add more results here
