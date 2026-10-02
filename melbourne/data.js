@@ -3,6 +3,18 @@
 
 var lotteryData = [
     {
+        date: "2026-10-02",
+        first: "2037",
+        second: "0195",
+        third: "2731"
+    },
+    {
+        date: "2026-10-01",
+        first: "1965",
+        second: "9084",
+        third: "7286"
+    },
+    {
         date: "2026-09-30",
         first: "5248",
         second: "3422",
@@ -217,216 +229,6 @@ var lotteryData = [
         first: "2608",
         second: "4451",
         third: "1392"
-    },
-    {
-        date: "2026-08-25",
-        first: "7567",
-        second: "8435",
-        third: "1765"
-    },
-    {
-        date: "2026-08-24",
-        first: "9843",
-        second: "0035",
-        third: "8951"
-    },
-    {
-        date: "2026-08-23",
-        first: "8012",
-        second: "6433",
-        third: "0157"
-    },
-    {
-        date: "2026-08-22",
-        first: "7903",
-        second: "9941",
-        third: "6584"
-    },
-    {
-        date: "2026-08-21",
-        first: "2364",
-        second: "8756",
-        third: "9941"
-    },
-    {
-        date: "2026-08-20",
-        first: "7589",
-        second: "0951",
-        third: "6784"
-    },
-    {
-        date: "2026-08-19",
-        first: "1420",
-        second: "9356",
-        third: "8831"
-    },
-    {
-        date: "2026-08-18",
-        first: "5943",
-        second: "8521",
-        third: "0046"
-    },
-    {
-        date: "2026-08-17",
-        first: "2816",
-        second: "7751",
-        third: "5684"
-    },
-    {
-        date: "2026-08-16",
-        first: "0701",
-        second: "8234",
-        third: "1670"
-    },
-    {
-        date: "2026-08-15",
-        first: "3984",
-        second: "0091",
-        third: "7852"
-    },
-    {
-        date: "2026-08-14",
-        first: "8265",
-        second: "1244",
-        third: "0975"
-    },
-    {
-        date: "2026-08-13",
-        first: "1753",
-        second: "8900",
-        third: "6518"
-    },
-    {
-        date: "2026-08-12",
-        first: "0294",
-        second: "7851",
-        third: "9876"
-    },
-    {
-        date: "2026-08-11",
-        first: "4188",
-        second: "5678",
-        third: "0862"
-    },
-    {
-        date: "2026-08-10",
-        first: "3957",
-        second: "0013",
-        third: "4321"
-    },
-    {
-        date: "2026-08-09",
-        first: "7681",
-        second: "3341",
-        third: "8291"
-    },
-    {
-        date: "2026-08-08",
-        first: "9172",
-        second: "0944",
-        third: "6751"
-    },
-    {
-        date: "2026-08-07",
-        first: "5480",
-        second: "1433",
-        third: "0962"
-    },
-    {
-        date: "2026-08-06",
-        first: "2968",
-        second: "0199",
-        third: "2039"
-    },
-    {
-        date: "2026-08-05",
-        first: "0456",
-        second: "8931",
-        third: "1190"
-    },
-    {
-        date: "2026-08-04",
-        first: "2843",
-        second: "0922",
-        third: "1346"
-    },
-    {
-        date: "2026-08-03",
-        first: "1537",
-        second: "9901",
-        third: "2065"
-    },
-    {
-        date: "2026-08-02",
-        first: "3952",
-        second: "2099",
-        third: "3187"
-    },
-    {
-        date: "2026-08-01",
-        first: "8520",
-        second: "0955",
-        third: "7341"
-    },
-    {
-        date: "2026-07-31",
-        first: "0694",
-        second: "7689",
-        third: "4245"
-    },
-    {
-        date: "2026-07-30",
-        first: "6253",
-        second: "7841",
-        third: "8890"
-    },
-    {
-        date: "2026-07-29",
-        first: "3299",
-        second: "7841",
-        third: "1092"
-    },
-    {
-        date: "2026-07-28",
-        first: "4385",
-        second: "9902",
-        third: "6742"
-    },
-    {
-        date: "2026-07-27",
-        first: "7911",
-        second: "0244",
-        third: "1865"
-    },
-    {
-        date: "2026-07-26",
-        first: "5291",
-        second: "0091",
-        third: "7825"
-    },
-    {
-        date: "2026-07-25",
-        first: "8361",
-        second: "0933",
-        third: "9061"
-    },
-    {
-        date: "2026-07-24",
-        first: "3678",
-        second: "8531",
-        third: "4911"
-    },
-    {
-        date: "2026-07-23",
-        first: "2179",
-        second: "0798",
-        third: "8550"
-    },
-    {
-        date: "2026-07-22",
-        first: "5809",
-        second: "2927",
-        third: "1340"
     },
     
 ];
