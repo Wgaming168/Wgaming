@@ -3,6 +3,12 @@
 
 var lotteryData = [
     {
+        date: "2026-11-17",
+        first: "6884  ",
+        second: "1258",
+        third: "3698"
+    },
+    {
         date: "2026-11-16",
         first: "3121  ",
         second: "2569",
